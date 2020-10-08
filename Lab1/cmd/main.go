@@ -4,6 +4,7 @@ import (
 	"Lab1/internal/pgk/Person/Delivery"
 	"Lab1/internal/pgk/Person/Repository"
 	"Lab1/internal/pgk/Person/Usecase"
+	"Lab1/internal/pgk/middleware"
 	"context"
 	"github.com/gorilla/mux"
 	"github.com/jackc/pgx/v4/pgxpool"
@@ -32,20 +33,19 @@ func main() {
 		log.Fatal("database connection not established")
 	}
 
-
-	personToRepository := Repository.NewPersonRepository (*connectionToServer)
+	personToRepository := Repository.NewPersonRepository(*connectionToServer)
 	personToUsecase := Usecase.NewPersonUsecase(personToRepository)
 	personToDelivery := Delivery.NewPersonHandler(personToUsecase)
 
 	router := mux.NewRouter()
-	//router.Use(middleware.InternalServerError)
+	router.Use(middleware.InternalServerError)
 
 	router.HandleFunc("/person/{personID}", personToDelivery.Read).Methods("GET")
 	router.HandleFunc("/persons", personToDelivery.ReadAll).Methods("GET")
 	router.HandleFunc("/person", personToDelivery.Create).Methods("POST")
 	router.HandleFunc("/person/{personID}", personToDelivery.Update).Methods("PATSH")
 	router.HandleFunc("/person/{personID}", personToDelivery.Delete).Methods("DELETE")
-	
+
 	srv := &http.Server{
 		Handler:      router,
 		Addr:         ":5000",
@@ -57,4 +57,3 @@ func main() {
 	log.Fatal(srv.ListenAndServe())
 
 }
-

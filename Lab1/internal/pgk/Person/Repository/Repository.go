@@ -5,7 +5,6 @@ import (
 	"context"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"log"
-
 )
 
 type PersonRepository struct {
@@ -16,12 +15,9 @@ func NewPersonRepository(pool pgxpool.Pool) *PersonRepository {
 	return &PersonRepository{pool: pool}
 }
 
-
-
 func (ForRepository *PersonRepository) Get(person *model_of_person.PersonRequest) (uint, int) {
-	result := ForRepository.pool.QueryRow(context.Background(), CreatePerson, person.Name, person.Age,person.Address,person.Work)
+	result := ForRepository.pool.QueryRow(context.Background(), CreatePerson, person.Name, person.Age, person.Address, person.Work)
 	ForError := result.Scan(&person.ID)
-	log.Print(result)
 	if ForError != nil {
 		return 0, model_of_person.NOTFOUND
 	} else {
@@ -34,7 +30,6 @@ func (ForRepository *PersonRepository) Read(id uint) (*model_of_person.PersonRes
 	result := ForRepository.pool.QueryRow(context.Background(), ReadPerson, person.ID)
 
 	ForError := result.Scan(&person.Name, &person.Age, &person.Address, &person.Work)
-	log.Print(result)
 	if ForError != nil {
 		return &person, model_of_person.NOTFOUND
 	} else {
@@ -90,4 +85,3 @@ func (ForRepository *PersonRepository) Delete(ID uint) int {
 
 	return model_of_person.OKEY
 }
-

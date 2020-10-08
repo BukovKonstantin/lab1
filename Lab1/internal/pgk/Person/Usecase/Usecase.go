@@ -1,4 +1,5 @@
 package Usecase
+
 import (
 	"Lab1/internal/pgk/Person"
 	"Lab1/internal/pgk/model_of_person"
