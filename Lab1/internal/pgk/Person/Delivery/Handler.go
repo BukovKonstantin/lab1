@@ -28,13 +28,12 @@ func (ForPerson *PersonHandler) Read(ForWriter http.ResponseWriter, ForReader *h
 			Message: "Incorrect id",
 		}
 		jsn, _ := json.Marshal(answer)
-
-		ForWriter.Write(jsn)
 		ForWriter.WriteHeader(http.StatusBadRequest)
+		ForWriter.Write(jsn)
+
 		return
 	}
 	person, code := ForPerson.ForPersonUsecase.Read(uint(id_local))
-
 	switch code {
 	case model_of_person.OKEY:
 		ForJson, _ := json.Marshal(person)
@@ -44,8 +43,9 @@ func (ForPerson *PersonHandler) Read(ForWriter http.ResponseWriter, ForReader *h
 			Message: "Person not found",
 		}
 		jsn, _ := json.Marshal(answer)
-		ForWriter.Write(jsn)
 		ForWriter.WriteHeader(http.StatusNotFound)
+		ForWriter.Write(jsn)
+
 	default:
 		ForWriter.WriteHeader(http.StatusBadRequest)
 	}
@@ -62,16 +62,17 @@ func (ForPerson *PersonHandler) ReadAll(ForWriter http.ResponseWriter, ForReader
 			Message: "Person not found",
 		}
 		jsn, _ := json.Marshal(answer)
-		ForWriter.Write(jsn)
 		ForWriter.WriteHeader(http.StatusNotFound)
+		ForWriter.Write(jsn)
+
 	default:
 		answer := model_of_person.ErrorValidation{
 			Message: "Incorrect data",
 		}
-		js, _ := json.Marshal(answer)
-
-		ForWriter.Write(js)
+		jsn, _ := json.Marshal(answer)
 		ForWriter.WriteHeader(http.StatusBadRequest)
+		ForWriter.Write(jsn)
+
 	}
 }
 func (ForPerson *PersonHandler) Delete(ForWriter http.ResponseWriter, ForReader *http.Request) {
@@ -92,9 +93,9 @@ func (ForPerson *PersonHandler) Delete(ForWriter http.ResponseWriter, ForReader 
 		}
 
 		jsn, _ := json.Marshal(answer)
-
-		ForWriter.Write(jsn)
 		ForWriter.WriteHeader(http.StatusNotFound)
+		ForWriter.Write(jsn)
+
 	default:
 		ForWriter.WriteHeader(http.StatusBadRequest)
 	}
@@ -117,8 +118,9 @@ func (ForPerson *PersonHandler) Update(ForWriter http.ResponseWriter, ForReader 
 			Message: "Person not found",
 		}
 		jsn, _ := json.Marshal(answer)
-		ForWriter.Write(jsn)
 		ForWriter.WriteHeader(http.StatusNotFound)
+		ForWriter.Write(jsn)
+
 	default:
 		ForWriter.WriteHeader(http.StatusBadRequest)
 	}
@@ -135,9 +137,9 @@ func (ForPerson *PersonHandler) Create(ForWriter http.ResponseWriter, ForReader 
 			Message: "Incorrect json",
 		}
 		jsn, _ := json.Marshal(answer)
-
-		ForWriter.Write(jsn)
 		ForWriter.WriteHeader(http.StatusBadRequest)
+		ForWriter.Write(jsn)
+
 		return
 	}
 
@@ -153,8 +155,9 @@ func (ForPerson *PersonHandler) Create(ForWriter http.ResponseWriter, ForReader 
 			Message: "Person not found",
 		}
 		jsn, _ := json.Marshal(answer)
-		ForWriter.Write(jsn)
 		ForWriter.WriteHeader(http.StatusNotFound)
+		ForWriter.Write(jsn)
+
 	default:
 		ForWriter.WriteHeader(http.StatusBadRequest)
 	}

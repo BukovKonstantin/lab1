@@ -30,6 +30,7 @@ func (ForRepository *PersonRepository) Read(id uint) (*model_of_person.PersonRes
 	result := ForRepository.pool.QueryRow(context.Background(), ReadPerson, person.ID)
 
 	ForError := result.Scan(&person.Name, &person.Age, &person.Address, &person.Work)
+
 	if ForError != nil {
 		return &person, model_of_person.NOTFOUND
 	} else {

@@ -40,11 +40,11 @@ func main() {
 	router := mux.NewRouter()
 	router.Use(middleware.InternalServerError)
 
-	router.HandleFunc("/person/{personID}", personToDelivery.Read).Methods("GET")
+	router.HandleFunc("/persons/{personID}", personToDelivery.Read).Methods("GET")
 	router.HandleFunc("/persons", personToDelivery.ReadAll).Methods("GET")
-	router.HandleFunc("/person", personToDelivery.Create).Methods("POST")
-	router.HandleFunc("/person/{personID}", personToDelivery.Update).Methods("PATSH")
-	router.HandleFunc("/person/{personID}", personToDelivery.Delete).Methods("DELETE")
+	router.HandleFunc("/persons", personToDelivery.Create).Methods("POST")
+	router.HandleFunc("/persons/{personID}", personToDelivery.Update).Methods("PATCH")
+	router.HandleFunc("/persons/{personID}", personToDelivery.Delete).Methods("DELETE")
 
 	srv := &http.Server{
 		Handler:      router,

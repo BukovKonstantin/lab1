@@ -22,31 +22,9 @@
     <list default="true" id="e2224425-d3e8-4a0e-ac73-cae2b484cdcf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/pgk/Person/Delivery/Handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pgk/Person/Delivery/Handler.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/pgk/Person/Repository/Repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pgk/Person/Repository/Repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pgk/Person/Repository/SqlRequest.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pgk/Person/Repository/SqlRequest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pgk/Person/Usecase/Usecase.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pgk/Person/Usecase/Usecase.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pgk/Person/interface_for_repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pgk/Person/interface_for_repository.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pgk/Person/interface_for_usecase.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pgk/Person/interface_for_usecase.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pgk/model_of_person/Error.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pgk/model_of_person/Error.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/pgk/model_of_person/error_codes.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pgk/model_of_person/error_codes.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/pgk/model_of_person/person_Structure_Model.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/pgk/model_of_person/person_Structure_Model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/.idea/awesomeProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/cmd/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/internal/pgk/persona/delivery/handler_file.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/internal/pgk/persona/inteface.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/internal/pgk/persona/model.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/internal/pgk/persona/rep/Sql.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/internal/pgk/persona/rep/rep.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../awesomeProject/internal/pgk/persona/usecase/usecase.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,17 +43,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1hvfEpHqZnu6FqSMiU37VwcEQLz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/internal/pgk/Person" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
@@ -118,6 +100,9 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -126,25 +111,33 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1601564099318" />
-    <state width="1493" height="158" key="GridCell.Tab.0.bottom" timestamp="1601741963855">
+    <state width="1493" height="158" key="GridCell.Tab.0.bottom" timestamp="1602180429883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="158" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601741963855" />
-    <state width="1493" height="158" key="GridCell.Tab.0.center" timestamp="1601741963855">
+    <state width="1493" height="158" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602180429883" />
+    <state width="1493" height="158" key="GridCell.Tab.0.center" timestamp="1602180429883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="158" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601741963855" />
-    <state width="1493" height="158" key="GridCell.Tab.0.left" timestamp="1601741963855">
+    <state width="1493" height="158" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602180429883" />
+    <state width="1493" height="158" key="GridCell.Tab.0.left" timestamp="1602180429883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="158" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601741963855" />
-    <state width="1493" height="158" key="GridCell.Tab.0.right" timestamp="1601741963855">
+    <state width="1493" height="158" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602180429883" />
+    <state width="1493" height="158" key="GridCell.Tab.0.right" timestamp="1602180429883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="158" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601741963855" />
+    <state width="1493" height="158" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602180429883" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1600898418972">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600898418972" />
+    <state x="762" y="0" width="781" height="830" key="dock-window-1" timestamp="1602170406042">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="762" y="0" width="781" height="830" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1602170406042" />
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1602171436921">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1602171436921" />
   </component>
 </project>
